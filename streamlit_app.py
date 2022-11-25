@@ -11,25 +11,17 @@ streamlit.title('Air Canada Webpage')
 
 streamlit.header('Missing Roles')
 
-#streamlit.multiselect(
-#streamlit.dataframe()
+#my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 
+#my_cur = my_cnx.cursor()
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-
-
-
-my_cur = my_cnx.cursor()
-
-
-
-my_cur.execute("SELECT * FROM SANDBOX.USR_SAJEEVAN_PARAMSOTHY.ROLES_WITH_INVALID_NAMING")
-myresult = my_cur.fetchall()
+#my_cur.execute("SELECT * FROM SANDBOX.USR_SAJEEVAN_PARAMSOTHY.ROLES_WITH_INVALID_NAMING")
+#myresult = my_cur.fetchall()
 
 
 
 
-streamlit.dataframe(myresult)
+#streamlit.dataframe(myresult)
 
 
 
